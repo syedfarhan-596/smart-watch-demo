@@ -1,0 +1,54 @@
+.watchDisplay{
+    position: relative;
+    width: 100%;
+
+  }
+  .watchDisplay > img{
+    margin-top: 38px;
+    width: 100%;
+  }
+  .watchTime{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    color: white;
+    font-size: 48px;
+    font-weight: 600;
+  
+    transform: translate(-50%,-50%);
+  }
+  .watchHeart{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+  
+    transform: translate(-50%,-50%);
+  }
+  .watchHeart>p{
+    margin-top: 18px;
+  }
+  .watchHeart > i {
+    color: red;
+    font-size: 50px;
+    animation: heartBeat 2s infinite;
+  }
+  @keyframes heartBeat{
+    0%{
+      transform: scale(1,1);
+    }
+    50%{
+      transform: scale(1.5 , 1.5);
+    }
+    100%{
+      transform: scale(1,1);
+    }
+  }
+  @media (max-width:927px){
+    .watchDisplay > img{
+      height: 420px;
+      width: 100%;
+    }
+  }
